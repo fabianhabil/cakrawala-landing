@@ -29,11 +29,7 @@ const Section1 = () => {
         <Hidden mdDown>
           <Grid container className={style.section1}>
             <Container maxWidth="xl">
-              <AppBar
-                sx={{ backgroundColor: "transparent", padding: "50px" }}
-                position="static"
-                elevation={0}
-              >
+              <AppBar position="static" elevation={0} className={style.nav}>
                 <Grid
                   container
                   direction="row"
@@ -51,14 +47,7 @@ const Section1 = () => {
                         />
                       </Grid>
                       <Grid item>
-                        <Typography
-                          sx={{
-                            fontFamily: "Poppins",
-                            fontWeight: 800,
-                            fontSize: "20px",
-                            ml: "12px",
-                          }}
-                        >
+                        <Typography className={style.judulnav}>
                           Cakrawala Music Production
                         </Typography>
                       </Grid>
@@ -96,22 +85,7 @@ const Section1 = () => {
                   </Grid>
                 </Grid>
               </AppBar>
-              <Grid
-                container
-                sx={
-                  {
-                    // p: "50px",
-                    // marginTop: "auto",
-                    // alignItems: "center",
-                    // minWidth: "100%",
-                    // marginy: "auto",
-                  }
-                }
-                spacing={5}
-                // direction="row"
-                // justifyContent="center"
-                // alignItems="center"
-              >
+              <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
                   <Grid
                     container
@@ -119,30 +93,15 @@ const Section1 = () => {
                     alignItems="flex-start"
                     justifyContent="center"
                     spacing={5}
-                    sx={{ p: "50px", mt: "5vh" }}
+                    className={style.isiSection1}
                   >
                     <Grid item xs={12} md={12}>
-                      <Typography
-                        sx={{
-                          fontFamily: "Playfair Display",
-                          fontWeight: 500,
-                          letterSpacing: "3px",
-                          fontSize: "52px",
-                        }}
-                      >
+                      <Typography className={style.judulSection1}>
                         Cakrawala Music Production
                       </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                      <Typography
-                        sx={{
-                          fontFamily: "Poppins",
-                          fontWeight: 500,
-                          fontSize: "20px",
-                          letterSpacing: "2px",
-                          lineHeight: "46px",
-                        }}
-                      >
+                      <Typography className={style.descSection1}>
                         The solution for song cover and production recording,
                         mixing, and mastering services in Bandung City.
                       </Typography>
@@ -150,21 +109,7 @@ const Section1 = () => {
                     <Grid item xs={12} md={12}>
                       <Grid container spacing={8} alignItems="flex-start">
                         <Grid item xs={6} md={6}>
-                          <Button
-                            sx={{
-                              width: "200px",
-                              height: "55px",
-                              background:
-                                "linear-gradient(95.29deg, #303030 0%, #3E3E3E 100%)",
-                              borderRadius: "5px",
-                              padding: "20px",
-                              color: "#FFFFFF",
-                              "&:hover": {
-                                backgroundColor: "#ffffff",
-                                color: "#F8F7F3",
-                              },
-                            }}
-                          >
+                          <Button className={style.button1Section1}>
                             <Grid
                               container
                               direction="row"
@@ -196,20 +141,7 @@ const Section1 = () => {
                           </Button>
                         </Grid>
                         <Grid item xs={6} md={6}>
-                          <Button
-                            sx={{
-                              width: "200px",
-                              height: "55px",
-                              backgroundColor: "#FFFFFF",
-                              borderRadius: "5px",
-                              padding: "20px",
-                              color: "#303030",
-                              "&:hover": {
-                                backgroundColor: "#ffffff",
-                                color: "#000080",
-                              },
-                            }}
-                          >
+                          <Button className={style.button2Section1}>
                             <Grid
                               container
                               direction="row"
@@ -272,51 +204,18 @@ const Section1 = () => {
                 sx={{ padding: 3 }}
               >
                 <Grid item>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontWeight: 700,
-                      fontSize: "16px",
-                      lineHeight: "24px",
-                      letterSpacing: "1px",
-                    }}
-                  >
+                  <Typography className={style.judulSection1m}>
                     Cakrawala Music Production
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontWeight: 400,
-                      fontSize: "13px",
-                      lineHeight: "26px",
-                      letterSpacing: "1px",
-                      textAlign: "center",
-                      marginTop: "2vh",
-                    }}
-                  >
+                  <Typography className={style.descSection1m}>
                     The solution for song cover and production recording,
                     mixing, and mastering services in Bandung City.
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Button
-                    sx={{
-                      marginTop: "2vh",
-                      textTransform: "none",
-                      backgroundColor: "white",
-                      width: "161px",
-                      height: "52px",
-                      "&:active": {
-                        backgroundColor: "#ffffff",
-                      },
-                      "&:hover": {
-                        backgroundColor: "#ffffff",
-                      },
-                      borderRadius: "30px",
-                    }}
-                  >
+                  <Button className={style.buttonSection1m}>
                     <Typography
                       sx={{ color: "black", fontWeight: 700, fontSize: "13px" }}
                     >

@@ -16,6 +16,7 @@ import React from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Marquee from "react-fast-marquee";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const fasilitas = [
   {
@@ -172,16 +173,15 @@ const Section3 = () => {
                 justifyContent="center"
                 alignItems="center"
                 spacing={3}
-                // sx={{ padding: 3 }}
-                sx={{ py: 3, px: 2 }}
+                sx={{ padding: 3, my: 1 }}
               >
                 <Grid item>
                   <Typography
                     sx={{
                       fontFamily: "Poppins",
                       fontWeight: 700,
-                      fontSize: "24px",
-                      lineHeight: "36px",
+                      fontSize: "32px",
+                      lineHeight: "48px",
                     }}
                   >
                     Our Facilities
@@ -191,7 +191,7 @@ const Section3 = () => {
                   <Typography
                     sx={{
                       fontFamily: "Inter",
-                      fontWeight: 400,
+                      fontWeight: 500,
                       lineHeight: "32px",
                       fontSize: "20px",
                       color: "#BBBBBB",
@@ -205,33 +205,29 @@ const Section3 = () => {
                   <Grid
                     container
                     direction="row"
-                    justifyContent="space-evenly"
+                    justifyContent="center"
                     alignItems="center"
-                    sx={{ padding: 0 }}
+                    spacing={2}
                   >
-                    <Grid item xs={12}>
-                      <Grid
-                        container
-                        direction="row"
-                        justifyContent="space-evenly"
-                        alignItems="center"
-                        spacing={3}
-                      >
-                        <Grid item xs={6}>
-                          <img
-                            src="./fasilitas1.png"
-                            width={180}
-                            height={180}
-                          ></img>
-                        </Grid>
-                        <Grid item xs={6}>
-                          <img
-                            src="./fasilitas1.png"
-                            width={180}
-                            height={180}
-                          ></img>
-                        </Grid>
-                      </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ minWidth: "100%" }}>
+                        <CardMedia component="img" image="./fasilitas1.png" />
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ minWidth: "100%" }}>
+                        <CardMedia component="img" image="./fasilitas2.png" />
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ minWidth: "100%" }}>
+                        <CardMedia component="img" image="./fasilitas2.png" />
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ minWidth: "100%" }}>
+                        <CardMedia component="img" image="./fasilitas2.png" />
+                      </Card>
                     </Grid>
                   </Grid>
                 </Grid>

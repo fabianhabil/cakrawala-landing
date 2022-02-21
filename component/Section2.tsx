@@ -265,12 +265,11 @@ const Section2 = () => {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Card sx={{ minWidth: "90%" }}>
+                  <Card sx={{ minWidth: "100%" }}>
                     <CardMedia
                       component="img"
                       height="400"
                       image="./profile.png"
-                      alt="green iguana"
                     />
                   </Card>
                 </Grid>
