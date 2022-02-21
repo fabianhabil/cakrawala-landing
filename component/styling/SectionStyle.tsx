@@ -39,7 +39,8 @@ const useStyles = makeStyles((theme: any) => ({
     width: "100%",
   },
   section2m: {
-    height: "70vh",
+    minHeight: "70vh",
+    height: "100%",
   },
   section2mp: {
     backgroundColor: "#E5E5E5",
@@ -48,6 +49,7 @@ const useStyles = makeStyles((theme: any) => ({
     backgroundSize: "cover",
     color: "black",
     minHeight: "100%",
+
     width: "100%",
   },
   cardmedia: {
@@ -65,7 +67,8 @@ const useStyles = makeStyles((theme: any) => ({
     width: "100%",
   },
   section3m: {
-    height: "70vh",
+    minHeight: "70vh",
+    height: "100%",
   },
   section3mp: {
     backgroundColor: "#E5E5E5",
@@ -73,8 +76,8 @@ const useStyles = makeStyles((theme: any) => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     color: "black",
-    minHeight: "100%",
-    width: "100%",
+    // minHeight: "100%",
+    // width: "100%",
   },
 }));
 
