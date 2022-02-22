@@ -1,10 +1,10 @@
-import { Hidden } from "@mui/material";
 import Head from "next/head";
 import React from "react";
-import Navbar from "../component/Navbar";
 import Section1 from "../component/Section1";
 import Section2 from "../component/Section2";
 import Section3 from "../component/Section3";
+import Section4 from "../component/Section4";
+import Section5 from "../component/Section5";
 
 const Index = () => {
   return (
@@ -20,6 +20,12 @@ const Index = () => {
       </div>
       <div id="facilities">
         <Section3 />
+      </div>
+      <div id="pricing">
+        <Section4 />
+      </div>
+      <div id="contact">
+        <Section5 />
       </div>
     </>
   );

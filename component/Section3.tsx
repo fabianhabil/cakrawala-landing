@@ -52,7 +52,7 @@ const Section3 = () => {
             <Container maxWidth="xl">
               <Grid
                 container
-                sx={{ px: "50px", height: "100%" }}
+                sx={{ px: "50px", height: "100%", my: 3 }}
                 alignItems="center"
                 justifyContent="center"
                 direction="column"
@@ -118,7 +118,7 @@ const Section3 = () => {
                           </Grid>
                           <Grid item sx={{ marginLeft: "15px" }}>
                             <img
-                              src="./profile.png"
+                              src="../fasilitas2.png"
                               style={{ width: "365px", height: "450px" }}
                             />
                           </Grid>
@@ -129,7 +129,7 @@ const Section3 = () => {
                             }}
                           >
                             <img
-                              src="./gig.jpeg"
+                              src="./fasilitas1.png"
                               style={{ width: "365px", height: "450px" }}
                             />
                           </Grid>
@@ -172,65 +172,104 @@ const Section3 = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                spacing={3}
                 sx={{ padding: 3, my: 1 }}
               >
-                <Grid item>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins",
-                      fontWeight: 700,
-                      fontSize: "32px",
-                      lineHeight: "48px",
-                    }}
-                  >
-                    Our Facilities
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography
-                    sx={{
-                      fontFamily: "Inter",
-                      fontWeight: 500,
-                      lineHeight: "32px",
-                      fontSize: "20px",
-                      color: "#BBBBBB",
-                    }}
-                  >
-                    We provide comfortable and clean facilities. Take a look to
-                    our facilitiy!
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Grid
-                    container
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    spacing={2}
-                  >
-                    <Grid item xs={6}>
-                      <Card sx={{ minWidth: "100%" }}>
-                        <CardMedia component="img" image="./fasilitas1.png" />
-                      </Card>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Card sx={{ minWidth: "100%" }}>
-                        <CardMedia component="img" image="./fasilitas2.png" />
-                      </Card>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Card sx={{ minWidth: "100%" }}>
-                        <CardMedia component="img" image="./fasilitas2.png" />
-                      </Card>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Card sx={{ minWidth: "100%" }}>
-                        <CardMedia component="img" image="./fasilitas2.png" />
-                      </Card>
-                    </Grid>
+                <Grid
+                  container
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={3}
+                >
+                  <Grid item>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontWeight: 700,
+                        fontSize: "32px",
+                        lineHeight: "48px",
+                      }}
+                    >
+                      Our Facilities
+                    </Typography>
+                  </Grid>
+                  <Grid item>
+                    <Typography
+                      sx={{
+                        fontFamily: "Inter",
+                        fontWeight: 500,
+                        lineHeight: "32px",
+                        alignItems: "center",
+                        textAlign: "center",
+                        flexGrow: 1,
+                        justifyContent: "center",
+                        fontSize: "20px",
+                        color: "#BBBBBB",
+                      }}
+                    >
+                      We provide comfortable and clean facilities. Take a look
+                      to our facility!
+                    </Typography>
                   </Grid>
                 </Grid>
+                <Marquee
+                  gradient={false}
+                  speed={40}
+                  style={{ marginTop: "25px" }}
+                  direction="right"
+                >
+                  <Grid item>
+                    <Grid
+                      container
+                      alignItems="center"
+                      justifyContent="center"
+                      spacing={3}
+                    >
+                      <Grid item sx={{ marginLeft: "15px" }}>
+                        <img
+                          src="./fasilitas1.png"
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                      <Grid item sx={{ marginLeft: "15px" }}>
+                        <img
+                          src="./fasilitas2.png"
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                      <Grid item sx={{ marginLeft: "15px" }}>
+                        <img
+                          src="./fasilitas1.png"
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                      <Grid item sx={{ marginLeft: "15px" }}>
+                        <img
+                          src="./fasilitas2.png"
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                      <Grid
+                        item
+                        sx={{
+                          marginLeft: "15px",
+                        }}
+                      >
+                        <img
+                          src="./fasilitas1.png"
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                      <Grid item sx={{ marginLeft: "15px" }}>
+                        <img
+                          src="./fasilitas2.png"
+                          alt=""
+                          style={{ width: "365px", height: "450px" }}
+                        />
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Marquee>
               </Grid>
             </Grid>
           </Grid>

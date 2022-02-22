@@ -164,6 +164,111 @@ const useStyles = makeStyles((theme: any) => ({
     minHeight: "100%",
     width: "100%",
   },
+
+  // Section 4
+  section4: {
+    minHeight: "100vh",
+    backgroundColor: "#E5E5E5",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    color: "black",
+    width: "100%",
+  },
+  harga: {
+    fontFamily: "Poppins",
+    fontWeight: 700,
+    fontSize: "26px",
+    lineHeight: "46px",
+  },
+  namaPaket: {
+    fontFamily: "Poppins",
+    fontWeight: 600,
+    fontSize: "20px",
+    lineHeight: "36px",
+  },
+  namaPaketm: {
+    color: "#202020",
+    fontWeight: 600,
+    fontFamily: "Poppins",
+    fontSize: "20px",
+    lineHeight: "36px",
+  },
+  isiPaketm: {
+    fontFamily: "Poppins",
+    fontWeight: 700,
+    fontSize: "18px",
+    lineHeight: "33px",
+  },
+  isiPaket: {
+    fontFamily: "Poppins",
+    fontWeight: 500,
+    fontSize: "15px",
+    // lineHeight: "22.5px",
+    color: "#848199",
+  },
+  buttonPaket: {
+    backgroundColor: "rgba(244, 150, 209, 0.2)",
+    borderRadius: "24px",
+    // width: "80%",
+    width: "100%",
+    height: "50px",
+    color: "#F496D1",
+    "&:hover": {
+      backgroundColor: "#F496D1",
+      color: "white",
+    },
+    "&:active": {
+      backgroundColor: "#F496D1",
+    },
+  },
+  hurufButtonPaket: {
+    fontFamily: "Poppins",
+    fontWeight: 500,
+    fontSize: "15px",
+    lineHeight: "22.5px",
+    textTransform: "none",
+  },
+  section4m: {
+    minHeight: "100vh",
+    height: "100%",
+    // width: "100%",
+  },
+  section4mp: {
+    backgroundColor: "#E5E5E5",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    color: "black",
+    minHeight: "100%",
+    width: "100%",
+  },
+
+  // Section 5
+  section5: {
+    minHeight: "100vh",
+    backgroundColor: "white",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    color: "black",
+    width: "100%",
+    height: "100%",
+  },
+  section5m: {
+    minHeight: "100vh",
+    height: "100%",
+    // width: "100%",
+  },
+  section5mp: {
+    backgroundColor: "white",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    color: "black",
+    minHeight: "100%",
+    width: "100%",
+  },
 }));
 
 export { useStyles };
