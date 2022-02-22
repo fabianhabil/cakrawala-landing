@@ -30,8 +30,7 @@ const Section5 = () => {
     <>
       <ThemeProvider theme={theme}>
         <Hidden mdDown>
-          <Grid container className={style.section5}>
-            {/* <Container maxWidth="xl"> */}
+          <Grid container>
             <Grid
               item
               xs={false}
@@ -49,11 +48,10 @@ const Section5 = () => {
                 container
                 direction="column"
                 justifyContent="center"
-                // alignItems="center"
                 sx={{
                   top: "50%",
                   bottom: "50%",
-                  minHeight: "100vh",
+                  minHeight: "95vh",
                   padding: 3,
                 }}
                 spacing={5}
@@ -71,13 +69,7 @@ const Section5 = () => {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Grid
-                    container
-                    direction="column"
-                    // justifyContent="center"
-                    // alignItems="center"
-                    spacing={2}
-                  >
+                  <Grid container direction="column" spacing={2}>
                     <Grid item>
                       <Typography
                         sx={{
@@ -102,13 +94,7 @@ const Section5 = () => {
                   </Grid>
                 </Grid>
                 <Grid item>
-                  <Grid
-                    container
-                    direction="column"
-                    // justifyContent="center"
-                    // alignItems="center"
-                    spacing={2}
-                  >
+                  <Grid container direction="column" spacing={2}>
                     <Grid item>
                       <Typography
                         sx={{
@@ -125,7 +111,7 @@ const Section5 = () => {
                       <TextField
                         sx={{ minWidth: "50%" }}
                         onChange={(e: any) => {
-                          setForm({ ...form, name: e.target.value });
+                          setForm({ ...form, email: e.target.value });
                         }}
                         placeholder="Johndoe@gmail.com"
                       />
@@ -133,13 +119,7 @@ const Section5 = () => {
                   </Grid>
                 </Grid>
                 <Grid item>
-                  <Grid
-                    container
-                    direction="column"
-                    // justifyContent="center"
-                    // alignItems="center"
-                    spacing={2}
-                  >
+                  <Grid container direction="column" spacing={2}>
                     <Grid item>
                       <Typography
                         sx={{
@@ -156,7 +136,7 @@ const Section5 = () => {
                       <TextField
                         sx={{ minWidth: "50%" }}
                         onChange={(e: any) => {
-                          setForm({ ...form, name: e.target.value });
+                          setForm({ ...form, message: e.target.value });
                         }}
                         placeholder="I want to book a place on Monday..."
                       />
@@ -165,25 +145,225 @@ const Section5 = () => {
                 </Grid>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ minHeight: "10vh", backgroundColor: "#303030" }}
-          >
-            <Grid item>
+            <Grid item xs={12} md={12}>
               <Grid
                 container
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                spacing={3}
+                sx={{ minHeight: "9vh", backgroundColor: "#303030" }}
               >
-                <Grid item>asd</Grid>
-                <Grid item>asd</Grid>
-                <Grid item>asd</Grid>
+                <Grid item>
+                  <Grid
+                    container
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                    spacing={3}
+                  >
+                    <Grid item>
+                      <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={2}
+                      >
+                        <Grid item>
+                          <img
+                            src="./location.png"
+                            style={{ verticalAlign: "middle" }}
+                          />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              fontFamily: "Poppins",
+                              fontWeight: 600,
+                              fontSize: "16px",
+                              lineHeight: "32px",
+                              color: "#EBEBEB",
+                              verticalAlign: "middle",
+                            }}
+                          >
+                            Perumahan Buah Batu Regensi, Kota Bandung
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    <Grid item>
+                      <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={2}
+                      >
+                        <Grid item>
+                          <img
+                            src="./mail.png"
+                            style={{ verticalAlign: "middle" }}
+                          />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              fontFamily: "Poppins",
+                              fontWeight: 600,
+                              fontSize: "16px",
+                              lineHeight: "32px",
+                              color: "#EBEBEB",
+                              verticalAlign: "middle",
+                            }}
+                          >
+                            cakrawalamusicproduction@gmail.com
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    <Grid item>
+                      <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={2}
+                      >
+                        <Grid item>
+                          <img
+                            src="./phone.png"
+                            style={{ verticalAlign: "middle" }}
+                          />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              fontFamily: "Poppins",
+                              fontWeight: 600,
+                              fontSize: "16px",
+                              lineHeight: "32px",
+                              color: "#EBEBEB",
+                              verticalAlign: "middle",
+                            }}
+                          >
+                            +62 878-4004-0055
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Hidden>
+        <Hidden mdUp>
+          <Grid container className={style.section5m}>
+            <Grid container className={style.section5mp}>
+              <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                // alignItems="center"
+                spacing={5}
+                sx={{ padding: 3 }}
+              >
+                <Grid item>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <Grid item>
+                      <Typography
+                        sx={{
+                          fontFamily: "Poppins",
+                          fontWeight: 700,
+                          fontSize: "24px",
+                          lineHeight: "36px",
+                        }}
+                      >
+                        Make An Appointment
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Grid container direction="column" spacing={2}>
+                    <Grid item>
+                      <Typography
+                        sx={{
+                          fontFamily: "Poppins",
+                          fontWeight: 600,
+                          fontSize: "16px",
+                          lineHeight: "21px",
+                        }}
+                      >
+                        Full Name
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        sx={{ minWidth: "100%" }}
+                        onChange={(e: any) => {
+                          setForm({ ...form, name: e.target.value });
+                        }}
+                        placeholder="John Doe"
+                      />
+                    </Grid>
+                  </Grid>
+                </Grid>{" "}
+                <Grid item>
+                  <Grid container direction="column" spacing={2}>
+                    <Grid item>
+                      <Typography
+                        sx={{
+                          fontFamily: "Poppins",
+                          fontWeight: 600,
+                          fontSize: "16px",
+                          lineHeight: "21px",
+                        }}
+                      >
+                        Email Adress
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        sx={{ minWidth: "100%" }}
+                        onChange={(e: any) => {
+                          setForm({ ...form, email: e.target.value });
+                        }}
+                        placeholder="Johndoe@gmail.com"
+                      />
+                    </Grid>
+                  </Grid>
+                </Grid>{" "}
+                <Grid item>
+                  <Grid container direction="column" spacing={2}>
+                    <Grid item>
+                      <Typography
+                        sx={{
+                          fontFamily: "Poppins",
+                          fontWeight: 600,
+                          fontSize: "16px",
+                          lineHeight: "21px",
+                        }}
+                      >
+                        Message
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        sx={{ minWidth: "100%" }}
+                        onChange={(e: any) => {
+                          setForm({ ...form, message: e.target.value });
+                        }}
+                        placeholder="I want to book a place on monday."
+                      />
+                    </Grid>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>

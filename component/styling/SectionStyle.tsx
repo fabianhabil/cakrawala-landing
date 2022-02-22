@@ -246,7 +246,7 @@ const useStyles = makeStyles((theme: any) => ({
 
   // Section 5
   section5: {
-    minHeight: "100vh",
+    minHeight: "90vh",
     backgroundColor: "white",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -256,12 +256,11 @@ const useStyles = makeStyles((theme: any) => ({
     height: "100%",
   },
   section5m: {
-    minHeight: "100vh",
+    minHeight: "70vh",
     height: "100%",
-    // width: "100%",
   },
   section5mp: {
-    backgroundColor: "white",
+    backgroundColor: "#E5E5E5",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",

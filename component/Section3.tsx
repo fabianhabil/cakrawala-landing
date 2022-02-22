@@ -112,49 +112,24 @@ const Section3 = () => {
                           </Grid>
                           <Grid item sx={{ marginLeft: "15px" }}>
                             <img
-                              src="./fasilitas1.png"
-                              style={{ width: "365px", height: "450px" }}
-                            />
-                          </Grid>
-                          <Grid item sx={{ marginLeft: "15px" }}>
-                            <img
-                              src="../fasilitas2.png"
-                              style={{ width: "365px", height: "450px" }}
-                            />
-                          </Grid>
-                          <Grid
-                            item
-                            sx={{
-                              marginLeft: "15px",
-                            }}
-                          >
-                            <img
-                              src="./fasilitas1.png"
-                              style={{ width: "365px", height: "450px" }}
-                            />
-                          </Grid>
-                          <Grid item sx={{ marginLeft: "15px" }}>
-                            <img
-                              src="./fasilitas2.png"
-                              alt=""
-                              style={{ width: "365px", height: "450px" }}
-                            />
-                          </Grid>
-                          {/* <Grid item>
-                            <Button
-                              sx={{
-                                color: "black",
-                                "&:hover": {
-                                  backgroundColor: "transparent",
-                                },
-                                "&:active": {
-                                  backgroundColor: "transparent",
-                                },
+                              src="./fasilitas3.jpg"
+                              style={{
+                                width: "365px",
+                                height: "450px",
+                                borderRadius: "8px",
                               }}
-                            >
-                              <ArrowForwardIosIcon />
-                            </Button>
-                          </Grid> */}
+                            />
+                          </Grid>
+                          <Grid item sx={{ marginLeft: "15px" }}>
+                            <img
+                              src="./fasilitas4.jpg"
+                              style={{
+                                width: "365px",
+                                height: "450px",
+                                borderRadius: "8px",
+                              }}
+                            />
+                          </Grid>
                         </Grid>
                       </Marquee>
                     </Grid>
@@ -239,32 +214,22 @@ const Section3 = () => {
                       </Grid>
                       <Grid item sx={{ marginLeft: "15px" }}>
                         <img
-                          src="./fasilitas1.png"
-                          style={{ width: "365px", height: "450px" }}
+                          src="./fasilitas3.jpg"
+                          style={{
+                            width: "365px",
+                            height: "450px",
+                            borderRadius: "8px",
+                          }}
                         />
                       </Grid>
                       <Grid item sx={{ marginLeft: "15px" }}>
                         <img
-                          src="./fasilitas2.png"
-                          style={{ width: "365px", height: "450px" }}
-                        />
-                      </Grid>
-                      <Grid
-                        item
-                        sx={{
-                          marginLeft: "15px",
-                        }}
-                      >
-                        <img
-                          src="./fasilitas1.png"
-                          style={{ width: "365px", height: "450px" }}
-                        />
-                      </Grid>
-                      <Grid item sx={{ marginLeft: "15px" }}>
-                        <img
-                          src="./fasilitas2.png"
-                          alt=""
-                          style={{ width: "365px", height: "450px" }}
+                          src="./fasilitas4.jpg"
+                          style={{
+                            width: "365px",
+                            height: "450px",
+                            borderRadius: "8px",
+                          }}
                         />
                       </Grid>
                     </Grid>
