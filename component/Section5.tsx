@@ -13,6 +13,7 @@ import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 
@@ -53,6 +54,7 @@ const Section5 = () => {
                   bottom: "50%",
                   minHeight: "95vh",
                   padding: 3,
+                  ml: 2,
                 }}
                 spacing={5}
               >
@@ -142,6 +144,57 @@ const Section5 = () => {
                       />
                     </Grid>
                   </Grid>
+                </Grid>
+                <Grid item>
+                  <a
+                    href={`https://api.whatsapp.com/send?phone=62818178545&text=Halo%20saya%20${form.name},%0A${form.message}`}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    target="_blank"
+                  >
+                    <Button
+                      sx={{
+                        width: "160px",
+                        height: "55px",
+                        padding: 3,
+                        backgroundColor: "#303030",
+                        borderRadius: "72px",
+                        "&:hover": {
+                          backgroundColor: "#303030",
+                        },
+                      }}
+                    >
+                      <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        sx={{ wrap: "noWrap" }}
+                      >
+                        <Grid item>
+                          <img
+                            src="./send.png"
+                            style={{ verticalAlign: "middle" }}
+                          />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              textTransform: "none",
+                              fontFamily: "Poppins",
+                              lineHeight: "24px",
+                              //   textAlign: "center",
+                              fontWeight: "bold",
+                              color: "#FFFFFF",
+                              fontSize: "16px",
+                              ml: 1,
+                            }}
+                          >
+                            Submit
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Button>
+                  </a>
                 </Grid>
               </Grid>
             </Grid>
@@ -246,7 +299,7 @@ const Section5 = () => {
                               verticalAlign: "middle",
                             }}
                           >
-                            +62 878-4004-0055
+                            +62 877-1759-4959
                           </Typography>
                         </Grid>
                       </Grid>
@@ -363,6 +416,57 @@ const Section5 = () => {
                       />
                     </Grid>
                   </Grid>
+                </Grid>
+                <Grid item>
+                  <a
+                    href={`https://api.whatsapp.com/send?phone=62818178545&text=Halo%20saya%20${form.name},%0A${form.message}`}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    target="_blank"
+                  >
+                    <Button
+                      sx={{
+                        width: "160px",
+                        height: "55px",
+                        padding: 3,
+                        backgroundColor: "#303030",
+                        borderRadius: "72px",
+                        "&:hover": {
+                          backgroundColor: "#303030",
+                        },
+                      }}
+                    >
+                      <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        sx={{ wrap: "noWrap" }}
+                      >
+                        <Grid item>
+                          <img
+                            src="./send.png"
+                            style={{ verticalAlign: "middle" }}
+                          />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              textTransform: "none",
+                              fontFamily: "Poppins",
+                              lineHeight: "24px",
+                              //   textAlign: "center",
+                              fontWeight: "bold",
+                              color: "#FFFFFF",
+                              fontSize: "16px",
+                              ml: 1,
+                            }}
+                          >
+                            Submit
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Button>
+                  </a>
                 </Grid>
               </Grid>
             </Grid>

@@ -570,7 +570,7 @@ const Section4 = () => {
                       </Grid>
                       <Grid item>
                         <Typography className={style.isiPaketm}>
-                          IDR 599.000
+                          Full Slot
                         </Typography>
                       </Grid>
                       <Grid item sx={{ mt: 2 }}>
