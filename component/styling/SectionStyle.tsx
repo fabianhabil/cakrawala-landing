@@ -63,12 +63,13 @@ const useStyles = makeStyles((theme: any) => ({
   button1Section1: {
     width: "200px",
     height: "55px",
-    background: "linear-gradient(95.29deg, #303030 0%, #3E3E3E 100%)",
+    background: "linear-gradient(95.29deg, #303030 100%, #3E3E3E 100%)",
+    backgroundColor: "#454545",
     borderRadius: "5px",
     padding: "20px",
     color: "#FFFFFF",
     "&:hover": {
-      backgroundColor: "#ffffff",
+      background: "#454545",
       color: "#F8F7F3",
     },
   },
@@ -80,8 +81,8 @@ const useStyles = makeStyles((theme: any) => ({
     padding: "20px",
     color: "#303030",
     "&:hover": {
-      backgroundColor: "#ffffff",
-      color: "#000080",
+      backgroundColor: "#373737",
+      color: "#FFFFFF",
     },
   },
   buttonSection1m: {

@@ -146,7 +146,7 @@ const Section5 = () => {
                         backgroundColor: "#303030",
                         borderRadius: "72px",
                         "&:hover": {
-                          backgroundColor: "#303030",
+                          backgroundColor: "#454545",
                         },
                       }}
                     >

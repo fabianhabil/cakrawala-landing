@@ -6,13 +6,19 @@ import {
   Typography,
   Hidden,
   Button,
+  SwipeableDrawer,
+  IconButton,
   Box,
-  Paper,
+  List,
+  ListItem,
+  ListItemText,
+  Toolbar,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useStyles } from "./styling/SectionStyle";
 import theme from "../src/theme";
 import { Link as Scroll } from "react-scroll";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = [
   { name: "Home", link: "home", key: 1, offset: 0 },
@@ -23,6 +29,14 @@ const pages = [
 
 const Section1 = () => {
   const style = useStyles();
+  const [isHovering, setIsHovering] = useState(false);
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -107,8 +121,13 @@ const Section1 = () => {
                       </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                      <Grid container spacing={8} alignItems="flex-start">
-                        <Grid item xs={6} md={6}>
+                      <Grid
+                        container
+                        spacing={10}
+                        direction="row"
+                        alignItems="center"
+                      >
+                        <Grid item xs={6}>
                           <Scroll
                             to={"about"}
                             spy={true}
@@ -148,7 +167,7 @@ const Section1 = () => {
                             </Button>
                           </Scroll>
                         </Grid>
-                        <Grid item xs={6} md={6}>
+                        <Grid item xs={6}>
                           <Scroll
                             to={"about"}
                             spy={true}
@@ -156,7 +175,11 @@ const Section1 = () => {
                             offset={0}
                             // activeClass="active"
                           >
-                            <Button className={style.button2Section1}>
+                            <Button
+                              className={style.button2Section1}
+                              onMouseOver={handleMouseOver}
+                              onMouseOut={handleMouseOut}
+                            >
                               <Grid
                                 container
                                 direction="row"
@@ -177,13 +200,28 @@ const Section1 = () => {
                                   </Typography>
                                 </Grid>
                                 <Grid item>
-                                  <img
-                                    src="./blackarrow.png"
-                                    style={{
-                                      verticalAlign: "middle",
-                                      marginLeft: 10,
-                                    }}
-                                  />
+                                  {isHovering && (
+                                    <>
+                                      <img
+                                        src="./whitearrow.png"
+                                        style={{
+                                          verticalAlign: "middle",
+                                          marginLeft: 10,
+                                        }}
+                                      />
+                                    </>
+                                  )}
+                                  {!isHovering && (
+                                    <>
+                                      <img
+                                        src="./blackarrow.png"
+                                        style={{
+                                          verticalAlign: "middle",
+                                          marginLeft: 10,
+                                        }}
+                                      />
+                                    </>
+                                  )}
                                 </Grid>
                               </Grid>
                             </Button>
@@ -199,17 +237,6 @@ const Section1 = () => {
         </Hidden>
         <Hidden mdUp>
           <Grid container className={style.section1m}>
-            <Grid
-              container
-              sx={{ minHeight: "30%" }}
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Grid item>
-                <img src="./cakrawalalogo.png" />
-              </Grid>
-            </Grid>
             <Grid container className={style.section1mp}>
               <Grid
                 container
@@ -235,7 +262,7 @@ const Section1 = () => {
                     to={"about"}
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-70}
                     // activeClass="active"
                   >
                     <Button className={style.buttonSection1m}>
