@@ -286,6 +286,9 @@ const Section2 = () => {
                         // backgroundColor: "black",
                         // border: "2px solid #303030",
                         borderRadius: "72px",
+                        "&:hover": {
+                          backgroundColor: "#454545",
+                        },
                       }}
                     >
                       <Grid

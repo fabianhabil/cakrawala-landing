@@ -268,7 +268,6 @@ const Section1 = () => {
                     <Button className={style.buttonSection1m}>
                       <Typography
                         sx={{
-                          color: "black",
                           fontWeight: 700,
                           fontSize: "13px",
                         }}

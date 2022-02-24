@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme: any) => ({
   },
   buttonSection1m: {
     marginTop: "2vh",
+    color: "black",
     textTransform: "none",
     backgroundColor: "white",
     width: "161px",
@@ -95,7 +96,8 @@ const useStyles = makeStyles((theme: any) => ({
       backgroundColor: "#ffffff",
     },
     "&:hover": {
-      backgroundColor: "#ffffff",
+      background: "#454545",
+      color: "white",
     },
     borderRadius: "30px",
   },
