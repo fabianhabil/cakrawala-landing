@@ -109,69 +109,85 @@ const Section1 = () => {
                     <Grid item xs={12} md={12}>
                       <Grid container spacing={8} alignItems="flex-start">
                         <Grid item xs={6} md={6}>
-                          <Button className={style.button1Section1}>
-                            <Grid
-                              container
-                              direction="row"
-                              justifyContent="center"
-                              alignItems="center"
-                              sx={{
-                                wrap: "noWrap",
-                              }}
-                            >
-                              <Grid item>
-                                <Typography
-                                  sx={{
-                                    textTransform: "none",
-                                  }}
-                                >
-                                  Explore More
-                                </Typography>
+                          <Scroll
+                            to={"about"}
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            // activeClass="active"
+                          >
+                            <Button className={style.button1Section1}>
+                              <Grid
+                                container
+                                direction="row"
+                                justifyContent="center"
+                                alignItems="center"
+                                sx={{
+                                  wrap: "noWrap",
+                                }}
+                              >
+                                <Grid item>
+                                  <Typography
+                                    sx={{
+                                      textTransform: "none",
+                                    }}
+                                  >
+                                    Explore More
+                                  </Typography>
+                                </Grid>
+                                <Grid item>
+                                  <img
+                                    src="./whitearrow.png"
+                                    style={{
+                                      verticalAlign: "middle",
+                                      marginLeft: 10,
+                                    }}
+                                  />
+                                </Grid>
                               </Grid>
-                              <Grid item>
-                                <img
-                                  src="./whitearrow.png"
-                                  style={{
-                                    verticalAlign: "middle",
-                                    marginLeft: 10,
-                                  }}
-                                />
-                              </Grid>
-                            </Grid>
-                          </Button>
+                            </Button>
+                          </Scroll>
                         </Grid>
                         <Grid item xs={6} md={6}>
-                          <Button className={style.button2Section1}>
-                            <Grid
-                              container
-                              direction="row"
-                              justifyContent="center"
-                              alignItems="center"
-                              sx={{
-                                wrap: "noWrap",
-                              }}
-                            >
-                              <Grid item>
-                                <Typography
-                                  sx={{
-                                    // color: "#303030",
-                                    textTransform: "none",
-                                  }}
-                                >
-                                  Read More
-                                </Typography>
+                          <Scroll
+                            to={"about"}
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            // activeClass="active"
+                          >
+                            <Button className={style.button2Section1}>
+                              <Grid
+                                container
+                                direction="row"
+                                justifyContent="center"
+                                alignItems="center"
+                                sx={{
+                                  wrap: "noWrap",
+                                }}
+                              >
+                                <Grid item>
+                                  <Typography
+                                    sx={{
+                                      // color: "#303030",
+                                      textTransform: "none",
+                                    }}
+                                  >
+                                    Read More
+                                  </Typography>
+                                </Grid>
+                                <Grid item>
+                                  <img
+                                    src="./blackarrow.png"
+                                    style={{
+                                      verticalAlign: "middle",
+                                      marginLeft: 10,
+                                    }}
+                                  />
+                                </Grid>
                               </Grid>
-                              <Grid item>
-                                <img
-                                  src="./blackarrow.png"
-                                  style={{
-                                    verticalAlign: "middle",
-                                    marginLeft: 10,
-                                  }}
-                                />
-                              </Grid>
-                            </Grid>
-                          </Button>
+                            </Button>
+                          </Scroll>
                         </Grid>
                       </Grid>
                     </Grid>
@@ -215,13 +231,25 @@ const Section1 = () => {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Button className={style.buttonSection1m}>
-                    <Typography
-                      sx={{ color: "black", fontWeight: 700, fontSize: "13px" }}
-                    >
-                      Explore More
-                    </Typography>
-                  </Button>
+                  <Scroll
+                    to={"about"}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    // activeClass="active"
+                  >
+                    <Button className={style.buttonSection1m}>
+                      <Typography
+                        sx={{
+                          color: "black",
+                          fontWeight: 700,
+                          fontSize: "13px",
+                        }}
+                      >
+                        Explore More
+                      </Typography>
+                    </Button>
+                  </Scroll>
                 </Grid>
               </Grid>
             </Grid>

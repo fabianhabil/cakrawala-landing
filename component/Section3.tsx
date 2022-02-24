@@ -3,20 +3,12 @@ import {
   Grid,
   Container,
   Typography,
-  Paper,
-  Card,
-  CardMedia,
-  Button,
 } from "@mui/material";
 import { ThemeProvider } from "@mui/styles";
 import theme from "../src/theme";
 import { useStyles } from "./styling/SectionStyle";
-import Carousel from "react-material-ui-carousel";
 import React from "react";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Marquee from "react-fast-marquee";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const fasilitas = [
   {

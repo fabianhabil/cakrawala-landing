@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Cakrawala</title>
+        <title>Cakrawala Music Production</title>
       </Head>
       <div id="home">
         <Section1 />

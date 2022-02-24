@@ -7,14 +7,11 @@ import {
   Hidden,
   Typography,
   Button,
-  Card,
-  CardMedia,
   ListItem,
   List,
-  ListItemText,
-  ListItemIcon,
 } from "@mui/material";
 import React from "react";
+import { Link as Scroll } from "react-scroll";
 
 const menu1 = [
   "Vocal Recording",
@@ -150,16 +147,23 @@ const Section4 = () => {
                             <Grid item>
                               <Grid container>
                                 <Grid item md={12} xs={12}>
-                                  <Button
-                                    className={style.buttonPaket}
-                                    sx={{ marginTop: "4vh" }}
+                                  <Scroll
+                                    to={"contact"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
                                   >
-                                    <Typography
-                                      className={style.hurufButtonPaket}
+                                    <Button
+                                      className={style.buttonPaket}
+                                      sx={{ marginTop: "4vh" }}
                                     >
-                                      Choose Plan
-                                    </Typography>
-                                  </Button>
+                                      <Typography
+                                        className={style.hurufButtonPaket}
+                                      >
+                                        Choose Plan
+                                      </Typography>
+                                    </Button>
+                                  </Scroll>
                                 </Grid>
                               </Grid>
                             </Grid>
@@ -205,16 +209,23 @@ const Section4 = () => {
                             <Grid item>
                               <Grid container>
                                 <Grid item md={12} xs={12}>
-                                  <Button
-                                    className={style.buttonPaket}
-                                    sx={{ marginTop: "4vh" }}
+                                  <Scroll
+                                    to={"contact"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
                                   >
-                                    <Typography
-                                      className={style.hurufButtonPaket}
+                                    <Button
+                                      className={style.buttonPaket}
+                                      sx={{ marginTop: "4vh" }}
                                     >
-                                      Choose Plan
-                                    </Typography>
-                                  </Button>
+                                      <Typography
+                                        className={style.hurufButtonPaket}
+                                      >
+                                        Choose Plan
+                                      </Typography>
+                                    </Button>
+                                  </Scroll>
                                 </Grid>
                               </Grid>
                             </Grid>
@@ -260,19 +271,23 @@ const Section4 = () => {
                             <Grid item>
                               <Grid container>
                                 <Grid item md={12} xs={12}>
-                                  <Button
-                                    className={style.buttonPaket}
-                                    sx={{
-                                      // marginTop: "22px",
-                                      marginTop: "6.4vh",
-                                    }}
+                                  <Scroll
+                                    to={"contact"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
                                   >
-                                    <Typography
-                                      className={style.hurufButtonPaket}
+                                    <Button
+                                      className={style.buttonPaket}
+                                      sx={{ marginTop: "6.4vh" }}
                                     >
-                                      Choose Plan
-                                    </Typography>
-                                  </Button>
+                                      <Typography
+                                        className={style.hurufButtonPaket}
+                                      >
+                                        Choose Plan
+                                      </Typography>
+                                    </Button>
+                                  </Scroll>
                                 </Grid>
                               </Grid>
                             </Grid>
@@ -318,16 +333,23 @@ const Section4 = () => {
                             <Grid item>
                               <Grid container>
                                 <Grid item md={12} xs={12}>
-                                  <Button
-                                    className={style.buttonPaket}
-                                    sx={{ marginTop: "6.4vh" }}
+                                  <Scroll
+                                    to={"contact"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
                                   >
-                                    <Typography
-                                      className={style.hurufButtonPaket}
+                                    <Button
+                                      className={style.buttonPaket}
+                                      sx={{ marginTop: "6.4vh" }}
                                     >
-                                      Choose Plan
-                                    </Typography>
-                                  </Button>
+                                      <Typography
+                                        className={style.hurufButtonPaket}
+                                      >
+                                        Choose Plan
+                                      </Typography>
+                                    </Button>
+                                  </Scroll>
                                 </Grid>
                               </Grid>
                             </Grid>
@@ -435,26 +457,34 @@ const Section4 = () => {
                           alignItems="center"
                         >
                           <Grid item>
-                            <Button
-                              sx={{
-                                backgroundColor: "rgba(244, 150, 209, 0.2)",
-                                borderRadius: "24px",
-                                color: "#F496D1",
-                                "&:hover": {
-                                  backgroundColor: "#F496D1",
-                                  color: "white",
-                                },
-                                "&:active": {
-                                  backgroundColor: "#F496D1",
-                                },
-                                height: "50px",
-                                width: "200px",
-                              }}
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                              // activeClass="active"
                             >
-                              <Typography className={style.hurufButtonPaket}>
-                                Choose Plan
-                              </Typography>
-                            </Button>
+                              <Button
+                                sx={{
+                                  backgroundColor: "rgba(244, 150, 209, 0.2)",
+                                  borderRadius: "24px",
+                                  color: "#F496D1",
+                                  "&:hover": {
+                                    backgroundColor: "#F496D1",
+                                    color: "white",
+                                  },
+                                  "&:active": {
+                                    backgroundColor: "#F496D1",
+                                  },
+                                  height: "50px",
+                                  width: "200px",
+                                }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
                           </Grid>
                         </Grid>
                       </Grid>
@@ -525,26 +555,34 @@ const Section4 = () => {
                           alignItems="center"
                         >
                           <Grid item>
-                            <Button
-                              sx={{
-                                backgroundColor: "rgba(244, 150, 209, 0.2)",
-                                borderRadius: "24px",
-                                color: "#F496D1",
-                                "&:hover": {
-                                  backgroundColor: "#F496D1",
-                                  color: "white",
-                                },
-                                "&:active": {
-                                  backgroundColor: "#F496D1",
-                                },
-                                height: "50px",
-                                width: "200px",
-                              }}
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                              // activeClass="active"
                             >
-                              <Typography className={style.hurufButtonPaket}>
-                                Choose Plan
-                              </Typography>
-                            </Button>
+                              <Button
+                                sx={{
+                                  backgroundColor: "rgba(244, 150, 209, 0.2)",
+                                  borderRadius: "24px",
+                                  color: "#F496D1",
+                                  "&:hover": {
+                                    backgroundColor: "#F496D1",
+                                    color: "white",
+                                  },
+                                  "&:active": {
+                                    backgroundColor: "#F496D1",
+                                  },
+                                  height: "50px",
+                                  width: "200px",
+                                }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
                           </Grid>
                         </Grid>
                       </Grid>
@@ -610,26 +648,34 @@ const Section4 = () => {
                           alignItems="center"
                         >
                           <Grid item>
-                            <Button
-                              sx={{
-                                backgroundColor: "rgba(244, 150, 209, 0.2)",
-                                borderRadius: "24px",
-                                color: "#F496D1",
-                                "&:hover": {
-                                  backgroundColor: "#F496D1",
-                                  color: "white",
-                                },
-                                "&:active": {
-                                  backgroundColor: "#F496D1",
-                                },
-                                height: "50px",
-                                width: "200px",
-                              }}
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                              // activeClass="active"
                             >
-                              <Typography className={style.hurufButtonPaket}>
-                                Choose Plan
-                              </Typography>
-                            </Button>
+                              <Button
+                                sx={{
+                                  backgroundColor: "rgba(244, 150, 209, 0.2)",
+                                  borderRadius: "24px",
+                                  color: "#F496D1",
+                                  "&:hover": {
+                                    backgroundColor: "#F496D1",
+                                    color: "white",
+                                  },
+                                  "&:active": {
+                                    backgroundColor: "#F496D1",
+                                  },
+                                  height: "50px",
+                                  width: "200px",
+                                }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
                           </Grid>
                         </Grid>
                       </Grid>
@@ -695,26 +741,34 @@ const Section4 = () => {
                           alignItems="center"
                         >
                           <Grid item>
-                            <Button
-                              sx={{
-                                backgroundColor: "rgba(244, 150, 209, 0.2)",
-                                borderRadius: "24px",
-                                color: "#F496D1",
-                                "&:hover": {
-                                  backgroundColor: "#F496D1",
-                                  color: "white",
-                                },
-                                "&:active": {
-                                  backgroundColor: "#F496D1",
-                                },
-                                height: "50px",
-                                width: "200px",
-                              }}
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                              // activeClass="active"
                             >
-                              <Typography className={style.hurufButtonPaket}>
-                                Choose Plan
-                              </Typography>
-                            </Button>
+                              <Button
+                                sx={{
+                                  backgroundColor: "rgba(244, 150, 209, 0.2)",
+                                  borderRadius: "24px",
+                                  color: "#F496D1",
+                                  "&:hover": {
+                                    backgroundColor: "#F496D1",
+                                    color: "white",
+                                  },
+                                  "&:active": {
+                                    backgroundColor: "#F496D1",
+                                  },
+                                  height: "50px",
+                                  width: "200px",
+                                }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
                           </Grid>
                         </Grid>
                       </Grid>

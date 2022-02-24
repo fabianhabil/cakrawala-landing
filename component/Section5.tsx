@@ -1,19 +1,10 @@
 import { useStyles } from "./styling/SectionStyle";
 import theme from "../src/theme";
 import { ThemeProvider } from "@mui/styles";
-import { Hidden, Grid, Container } from "@mui/material";
+import { Hidden, Grid } from "@mui/material";
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 
@@ -25,7 +16,6 @@ const Section5 = () => {
     email: "",
     message: "",
   });
-  console.log(form);
 
   return (
     <>
@@ -50,11 +40,8 @@ const Section5 = () => {
                 direction="column"
                 justifyContent="center"
                 sx={{
-                  top: "50%",
-                  bottom: "50%",
                   minHeight: "95vh",
-                  padding: 3,
-                  ml: 2,
+                  padding: 8,
                 }}
                 spacing={5}
               >
@@ -147,7 +134,7 @@ const Section5 = () => {
                 </Grid>
                 <Grid item>
                   <a
-                    href={`https://api.whatsapp.com/send?phone=62818178545&text=Halo%20saya%20${form.name},%0A${form.message}`}
+                    href={`https://api.whatsapp.com/send?phone=6287717594959&text=Halo%20saya%20${form.name},%0A${form.message}`}
                     style={{ color: "inherit", textDecoration: "none" }}
                     target="_blank"
                   >
@@ -412,14 +399,14 @@ const Section5 = () => {
                         onChange={(e: any) => {
                           setForm({ ...form, message: e.target.value });
                         }}
-                        placeholder="I want to book a place on monday."
+                        placeholder="I want to book a place on Monday..."
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <a
-                    href={`https://api.whatsapp.com/send?phone=62818178545&text=Halo%20saya%20${form.name},%0A${form.message}`}
+                    href={`https://api.whatsapp.com/send?phone=6287717594959&text=Halo%20saya%20${form.name},%0A${form.message}`}
                     style={{ color: "inherit", textDecoration: "none" }}
                     target="_blank"
                   >

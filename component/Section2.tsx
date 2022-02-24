@@ -11,7 +11,6 @@ import {
   CardMedia,
 } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Link from "next/link";
 
 const Section2 = () => {
   const style = useStyles();
