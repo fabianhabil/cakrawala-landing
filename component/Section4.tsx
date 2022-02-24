@@ -9,6 +9,10 @@ import {
   Button,
   ListItem,
   List,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
 } from "@mui/material";
 import React from "react";
 import { Link as Scroll } from "react-scroll";
@@ -16,14 +20,14 @@ import { Link as Scroll } from "react-scroll";
 const menu1 = [
   "Vocal Recording",
   "Pitch Correction",
-  "Mixing and Mastering (your music)",
+  "Mixing & Mastering (your music)",
   "Standard Video for Youtube",
 ];
 
 const menu2 = [
-  "Vocal Recording and Piano / Guitar Recording",
+  "Vocal Recording & Piano / Guitar Recording",
   "Pitch Correction",
-  "Mixing and Mastering",
+  "Mixing & Mastering",
   "Standard Video for Youtube",
 ];
 
@@ -31,7 +35,7 @@ const menu2m = [
   "Vocal Recording",
   "Piano / Guitar Recording",
   "Pitch Correction",
-  "Mixing and Mastering",
+  "Mixing & Mastering",
   "Standard Video for Youtube",
 ];
 
@@ -39,7 +43,7 @@ const menu3 = [
   "Basic Piano Arrangement",
   "Vocal Recording",
   "Pitch Correction",
-  "Mixing and Mastering",
+  "Mixing & Mastering",
 ];
 
 const menu4 = [
@@ -59,7 +63,7 @@ const Section4 = () => {
             <Container maxWidth="xl">
               <Grid
                 container
-                sx={{ height: "100%", px: "50px" }}
+                sx={{ height: "100%" }}
                 alignItems="center"
                 direction="column"
                 justifyContent="center"
@@ -95,19 +99,295 @@ const Section4 = () => {
                   <Grid
                     container
                     direction="row"
-                    alignItems="center"
+                    alignItems="stretch"
                     justifyContent="center"
                     sx={{
                       backgroundColor: "white",
                       minHeight: "60vh",
                       borderRadius: "26px",
-                      minWidth: "100%",
+                      minWidth: "80vh",
                       padding: 3,
                     }}
                   >
-                    <Grid container sx={{ padding: 5 }}>
-                      <Grid container spacing={5}>
-                        <Grid item md={3} xs={3} sx={{}}>
+                    <Grid item>
+                      <Grid container>
+                        <Grid item md={3}>
+                          <Card
+                            sx={{
+                              // minWidth: 500,
+                              // minWidth: "100%",
+                              // maxWidth: "100%",
+                              // minHeight: 500,
+                              width: "100%",
+                              height: "650px",
+                              // maxHeight: 800,
+                              backgroundRadius: 0,
+                              padding: 2,
+                            }}
+                            elevation={0}
+                          >
+                            <CardContent
+                              sx={{
+                                // minWidth: "100%",
+                                // maxWidth: "100%",
+                                // minHeight: "95%",
+                                // maxHeight: "95%",
+                                // backgroundColor: "red",
+                                height: "450px",
+                              }}
+                            >
+                              <Typography className={style.harga}>
+                                IDR 299.000
+                              </Typography>
+                              <Typography className={style.namaPaket}>
+                                Basic Soloist
+                              </Typography>
+                              {menu1.map((menu, index) => {
+                                return (
+                                  <React.Fragment key={index + 5}>
+                                    <List disablePadding sx={{ p: 0 }}>
+                                      <ListItem sx={{ p: 0, py: "12px" }}>
+                                        <img
+                                          src="./check.png"
+                                          style={{
+                                            verticalAlign: "middle",
+                                            marginRight: 10,
+                                          }}
+                                        />
+                                        <Typography className={style.isiPaket}>
+                                          {menu}
+                                        </Typography>
+                                      </ListItem>
+                                    </List>
+                                  </React.Fragment>
+                                );
+                              })}
+                            </CardContent>
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                            >
+                              <Button
+                                className={style.buttonPaket}
+                                sx={{ marginTop: "4vh" }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
+                          </Card>
+                        </Grid>
+                        <Grid item md={3}>
+                          <Card
+                            sx={{
+                              // minWidth: 500,
+                              // minWidth: "100%",
+                              // maxWidth: "100%",
+                              // minHeight: 500,
+                              width: "100%",
+                              height: "650px",
+                              // maxHeight: 800,
+                              backgroundRadius: 0,
+                              padding: 2,
+                            }}
+                            elevation={0}
+                          >
+                            <CardContent
+                              sx={{
+                                // minWidth: "100%",
+                                // maxWidth: "100%",
+                                // minHeight: "95%",
+                                // maxHeight: "95%",
+                                // backgroundColor: "red",
+                                height: "450px",
+                              }}
+                            >
+                              <Typography className={style.harga}>
+                                IDR 399.000
+                              </Typography>
+                              <Typography className={style.namaPaket}>
+                                Basic Musician
+                              </Typography>
+                              {menu2.map((menu, index) => {
+                                return (
+                                  <React.Fragment key={index + 5}>
+                                    <List disablePadding sx={{ p: 0 }}>
+                                      <ListItem sx={{ p: 0, py: "12px" }}>
+                                        <img
+                                          src="./check.png"
+                                          style={{
+                                            verticalAlign: "middle",
+                                            marginRight: 10,
+                                          }}
+                                        />
+                                        <Typography className={style.isiPaket}>
+                                          {menu}
+                                        </Typography>
+                                      </ListItem>
+                                    </List>
+                                  </React.Fragment>
+                                );
+                              })}
+                            </CardContent>
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                            >
+                              <Button
+                                className={style.buttonPaket}
+                                sx={{ marginTop: "4vh" }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
+                          </Card>
+                        </Grid>
+                        <Grid item md={3}>
+                          <Card
+                            sx={{
+                              // minWidth: 500,
+                              // minWidth: "100%",
+                              // maxWidth: "100%",
+                              // minHeight: 500,
+                              width: "100%",
+                              height: "650px",
+                              // maxHeight: 800,
+                              backgroundRadius: 0,
+                              padding: 2,
+                            }}
+                            elevation={0}
+                          >
+                            <CardContent
+                              sx={{
+                                // minWidth: "100%",
+                                // maxWidth: "100%",
+                                // minHeight: "95%",
+                                // maxHeight: "95%",
+                                // backgroundColor: "red",
+                                height: "450px",
+                              }}
+                            >
+                              <Typography className={style.harga}>
+                                Full Slot
+                              </Typography>
+                              <Typography className={style.namaPaket}>
+                                Silver Soloist
+                              </Typography>
+                              {menu3.map((menu, index) => {
+                                return (
+                                  <React.Fragment key={index + 5}>
+                                    <List disablePadding sx={{ p: 0 }}>
+                                      <ListItem sx={{ p: 0, py: "12px" }}>
+                                        <img
+                                          src="./check.png"
+                                          style={{
+                                            verticalAlign: "middle",
+                                            marginRight: 10,
+                                          }}
+                                        />
+                                        <Typography className={style.isiPaket}>
+                                          {menu}
+                                        </Typography>
+                                      </ListItem>
+                                    </List>
+                                  </React.Fragment>
+                                );
+                              })}
+                            </CardContent>
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                            >
+                              <Button
+                                className={style.buttonPaket}
+                                sx={{ marginTop: "4vh" }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
+                          </Card>
+                        </Grid>
+                        <Grid item md={3}>
+                          <Card
+                            sx={{
+                              // minWidth: 500,
+                              // minWidth: "100%",
+                              // maxWidth: "100%",
+                              // minHeight: 500,
+                              width: "100%",
+                              height: "650px",
+                              // maxHeight: 800,
+                              backgroundRadius: 0,
+                              padding: 2,
+                            }}
+                            elevation={0}
+                          >
+                            <CardContent
+                              sx={{
+                                // minWidth: "100%",
+                                // maxWidth: "100%",
+                                // minHeight: "95%",
+                                // maxHeight: "95%",
+                                // backgroundColor: "red",
+                                height: "450px",
+                              }}
+                            >
+                              <Typography className={style.harga}>
+                                Full Slot
+                              </Typography>
+                              <Typography className={style.namaPaket}>
+                                Premium Soloist
+                              </Typography>
+                              {menu4.map((menu, index) => {
+                                return (
+                                  <React.Fragment key={index + 5}>
+                                    <List disablePadding sx={{ p: 0 }}>
+                                      <ListItem sx={{ p: 0, py: "12px" }}>
+                                        <img
+                                          src="./check.png"
+                                          style={{
+                                            verticalAlign: "middle",
+                                            marginRight: 10,
+                                          }}
+                                        />
+                                        <Typography className={style.isiPaket}>
+                                          {menu}
+                                        </Typography>
+                                      </ListItem>
+                                    </List>
+                                  </React.Fragment>
+                                );
+                              })}
+                            </CardContent>
+                            <Scroll
+                              to={"contact"}
+                              spy={true}
+                              smooth={true}
+                              offset={0}
+                            >
+                              <Button
+                                className={style.buttonPaket}
+                                sx={{ marginTop: "4vh" }}
+                              >
+                                <Typography className={style.hurufButtonPaket}>
+                                  Choose Plan
+                                </Typography>
+                              </Button>
+                            </Scroll>
+                          </Card>
+                        </Grid>
+                        {/* <Grid item md={3} xs={3} sx={{}}>
                           <Grid
                             container
                             direction="column"
@@ -168,193 +448,7 @@ const Section4 = () => {
                               </Grid>
                             </Grid>
                           </Grid>
-                        </Grid>
-                        <Grid item md={3} xs={3} sx={{}}>
-                          <Grid
-                            container
-                            direction="column"
-                            justifyContent="center"
-                            spacing={2}
-                          >
-                            <Grid item>
-                              <Typography className={style.harga}>
-                                IDR 399.000
-                              </Typography>
-                            </Grid>
-                            <Grid item>
-                              <Typography className={style.namaPaket}>
-                                Basic Musician
-                              </Typography>
-                            </Grid>
-                            {menu2.map((menu, index) => {
-                              return (
-                                <React.Fragment key={index + 5}>
-                                  <List disablePadding>
-                                    <ListItem>
-                                      <img
-                                        src="./check.png"
-                                        style={{
-                                          verticalAlign: "middle",
-                                          marginRight: 10,
-                                        }}
-                                      />
-                                      <Typography className={style.isiPaket}>
-                                        {menu}
-                                      </Typography>
-                                    </ListItem>
-                                  </List>
-                                </React.Fragment>
-                              );
-                            })}
-                            <Grid item>
-                              <Grid container>
-                                <Grid item md={12} xs={12}>
-                                  <Scroll
-                                    to={"contact"}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                  >
-                                    <Button
-                                      className={style.buttonPaket}
-                                      sx={{ marginTop: "4vh" }}
-                                    >
-                                      <Typography
-                                        className={style.hurufButtonPaket}
-                                      >
-                                        Choose Plan
-                                      </Typography>
-                                    </Button>
-                                  </Scroll>
-                                </Grid>
-                              </Grid>
-                            </Grid>
-                          </Grid>
-                        </Grid>
-                        <Grid item md={3} xs={3} sx={{}}>
-                          <Grid
-                            container
-                            direction="column"
-                            justifyContent="center"
-                            spacing={2}
-                          >
-                            <Grid item>
-                              <Typography className={style.harga}>
-                                Full Slot
-                              </Typography>
-                            </Grid>
-                            <Grid item>
-                              <Typography className={style.namaPaket}>
-                                Silver Soloist
-                              </Typography>
-                            </Grid>
-                            {menu3.map((menu, index) => {
-                              return (
-                                <React.Fragment key={index + 5}>
-                                  <List disablePadding>
-                                    <ListItem>
-                                      <img
-                                        src="./check.png"
-                                        style={{
-                                          verticalAlign: "middle",
-                                          marginRight: 10,
-                                        }}
-                                      />
-                                      <Typography className={style.isiPaket}>
-                                        {menu}
-                                      </Typography>
-                                    </ListItem>
-                                  </List>
-                                </React.Fragment>
-                              );
-                            })}
-                            <Grid item>
-                              <Grid container>
-                                <Grid item md={12} xs={12}>
-                                  <Scroll
-                                    to={"contact"}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                  >
-                                    <Button
-                                      className={style.buttonPaket}
-                                      sx={{ marginTop: "6.4vh" }}
-                                    >
-                                      <Typography
-                                        className={style.hurufButtonPaket}
-                                      >
-                                        Choose Plan
-                                      </Typography>
-                                    </Button>
-                                  </Scroll>
-                                </Grid>
-                              </Grid>
-                            </Grid>
-                          </Grid>
-                        </Grid>
-                        <Grid item md={3} xs={3} sx={{}}>
-                          <Grid
-                            container
-                            direction="column"
-                            justifyContent="center"
-                            spacing={2}
-                          >
-                            <Grid item>
-                              <Typography className={style.harga}>
-                                Full Slot
-                              </Typography>
-                            </Grid>
-                            <Grid item>
-                              <Typography className={style.namaPaket}>
-                                Premium Soloist
-                              </Typography>
-                            </Grid>
-                            {menu4.map((menu, index) => {
-                              return (
-                                <React.Fragment key={index + 5}>
-                                  <List disablePadding>
-                                    <ListItem>
-                                      <img
-                                        src="./check.png"
-                                        style={{
-                                          verticalAlign: "middle",
-                                          marginRight: 10,
-                                        }}
-                                      />
-                                      <Typography className={style.isiPaket}>
-                                        {menu}
-                                      </Typography>
-                                    </ListItem>
-                                  </List>
-                                </React.Fragment>
-                              );
-                            })}
-                            <Grid item>
-                              <Grid container>
-                                <Grid item md={12} xs={12}>
-                                  <Scroll
-                                    to={"contact"}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                  >
-                                    <Button
-                                      className={style.buttonPaket}
-                                      sx={{ marginTop: "6.4vh" }}
-                                    >
-                                      <Typography
-                                        className={style.hurufButtonPaket}
-                                      >
-                                        Choose Plan
-                                      </Typography>
-                                    </Button>
-                                  </Scroll>
-                                </Grid>
-                              </Grid>
-                            </Grid>
-                          </Grid>
-                        </Grid>
+                        </Grid> */}
                       </Grid>
                     </Grid>
                   </Grid>

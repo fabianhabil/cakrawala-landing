@@ -212,6 +212,8 @@ const useStyles = makeStyles((theme: any) => ({
     borderRadius: "24px",
     // width: "80%",
     width: "100%",
+    // width: "120px",
+    // width: "25vh",
     height: "50px",
     color: "#F496D1",
     "&:hover": {
