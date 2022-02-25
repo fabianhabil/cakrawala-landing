@@ -1,12 +1,12 @@
 {
-  "name": "Cakrawala-landing",
+  "name": "cakrawala-landing",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 80",
     "lint": "next lint",
-    "export":"next export"
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -14,6 +14,8 @@
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.2",
     "@mui/styles": "^5.4.2",
+    "express": "^4.17.3",
+    "heroku-ssl-redirect": "^0.1.1",
     "install": "^0.13.0",
     "next": "^12.1.0",
     "npm": "^8.5.1",
